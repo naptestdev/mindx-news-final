@@ -1,0 +1,85 @@
+.editors-pick-section {
+  flex: 1;
+}
+
+.editors-pick-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.editors-pick-section .section-header h2 {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.editors-pick-section .section-header a {
+  color: var(--primary);
+}
+.editors-pick-section .section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.editors-pick-section .section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.editors-pick-section .section-card a {
+  font-weight: 700;
+  font-size: large;
+  transition: 0.3s;
+}
+.editors-pick-section .section-card a:hover {
+  color: var(--primary);
+}
+
+.newsletter {
+  width: 300px;
+  border: 1px solid #dfdee3;
+  padding: 0 20px 30px 20px;
+  background: #f5f5f5;
+}
+
+.newsletter .icon {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: large;
+}
+
+.newsletter h4 {
+  font-size: larger;
+  margin: 20px 0 10px 0;
+}
+
+.newsletter p {
+  color: #4c455f;
+}
+
+.newsletter input {
+  margin: 15px 0;
+  outline: none;
+  border: 1px solid #dfdee3;
+  padding: 15px 10px;
+  display: block;
+  width: 100%;
+  font-size: large;
+}
+
+.newsletter button {
+  outline: none;
+  border: none;
+  padding: 12px 20px;
+  background: var(--primary);
+  color: white;
+  border-radius: 9999px;
+  font-size: larger;
+}

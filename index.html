@@ -22,93 +22,149 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/sections.css" />
   </head>
   <body>
-    <nav>
-      <div class="navbar-side">
-        <a href="./index.html">
-          <img src="./assets/logo.png" alt="" />
-        </a>
-        <a href="#">Công nghệ</a>
-        <a href="#">Tiện ích</a>
-        <a href="#">Phần mềm</a>
-        <a href="#">Trò chơi</a>
-        <a href="#">Podcast</a>
-      </div>
-      <div class="navbar-side">
-        <a
-          style="color: var(--primary); text-transform: none; font-size: medium"
-          href="#"
-          >Subscribe</a
-        >
-        <a style="text-transform: none; font-size: medium" href="#">Sign in</a>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </nav>
-
-    <div class="hero-section">
-      <div class="hero">
-        <img
-          src="https://i1-sohoa.vnecdn.net/2023/09/11/iPhone-12-4672-1694405417.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=81GehGzvrk_EQYaguD6tJg"
-          alt=""
-        />
-        <div class="hero-content">
-          <p
+    <main>
+      <nav>
+        <div class="navbar-side">
+          <a href="./index.html">
+            <img src="./assets/logo.png" alt="" />
+          </a>
+          <a href="#">Công nghệ</a>
+          <a href="#">Tiện ích</a>
+          <a href="#">Phần mềm</a>
+          <a href="#">Trò chơi</a>
+          <a href="#">Podcast</a>
+        </div>
+        <div class="navbar-side">
+          <a
             style="
-              text-transform: uppercase;
-              letter-spacing: 3px;
-              font-size: small;
-              margin-bottom: 8px;
+              color: var(--primary);
+              text-transform: none;
+              font-size: medium;
             "
+            href="#"
+            >Subscribe</a
           >
-            Software
-          </p>
-          <h1 style="font-weight: 500; color: white">
-            Apple vá lỗ hổng nghe lén trên iPhone
-          </h1>
-          <div class="hero-chips">
-            <span class="chip">
-              <i class="fa-solid fa-user"></i>
-              <span>VNExpress</span>
-            </span>
-            <span class="chip">
-              <i class="fa-solid fa-calendar-days"></i>
-              <span>September 11, 2023</span>
-            </span>
-            <span class="chip">
-              <i class="fa-solid fa-comment"></i>
-              <span>No comments</span>
-            </span>
+          <a style="text-transform: none; font-size: medium" href="#"
+            >Sign in</a
+          >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav>
+
+      <div class="hero-section">
+        <a href="./post.html" class="hero">
+          <img
+            src="https://i1-sohoa.vnecdn.net/2023/09/11/iPhone-12-4672-1694405417.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=81GehGzvrk_EQYaguD6tJg"
+            alt=""
+          />
+          <div class="hero-content">
+            <p
+              style="
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: small;
+                margin-bottom: 8px;
+              "
+            >
+              Software
+            </p>
+            <h1 style="font-weight: 500; color: white">
+              Apple vá lỗ hổng nghe lén trên iPhone
+            </h1>
+            <div class="hero-chips">
+              <span class="chip">
+                <i class="fa-solid fa-user"></i>
+                <span>VNExpress</span>
+              </span>
+              <span class="chip">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>September 11, 2023</span>
+              </span>
+              <span class="chip">
+                <i class="fa-solid fa-comment"></i>
+                <span>No comments</span>
+              </span>
+            </div>
+            <p style="margin-top: 8px">
+              Bản vá iOS 16.6.1 được Apple tung ra nhằm sửa lỗ hổng trên iOS cho
+              phép phần mềm do thám Pegasus ẩn trong các tệp ảnh gửi qua
+              iMessage.
+            </p>
           </div>
-          <p style="margin-top: 8px">
-            Bản vá iOS 16.6.1 được Apple tung ra nhằm sửa lỗ hổng trên iOS cho
-            phép phần mềm do thám Pegasus ẩn trong các tệp ảnh gửi qua iMessage.
-          </p>
+        </a>
+        <div class="sidebar">
+          <img
+            src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-09.jpg"
+            alt=""
+          />
+          <div class="sidebar-post">
+            <p>Phần mềm</p>
+            <a href="#">Ông chủ ChatGPT chỉ ra vấn đề của Thung lũng Silicon</a>
+          </div>
+          <div class="sidebar-post">
+            <p>Công nghệ</p>
+            <a href="#">Chân dung iPhone 15 trước ngày ra mắt</a>
+          </div>
+          <div class="sidebar-post">
+            <p>Trò chơi</p>
+            <a href="#">Game bắt Pokemon khi ngủ gây chú ý</a>
+          </div>
+          <div class="sidebar-post">
+            <p>Tiện ích</p>
+            <a href="#">GoPro ra camera hành trình giá 12,5 triệu đồng</a>
+          </div>
         </div>
       </div>
-      <div class="sidebar">
-        <img
-          src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-09.jpg"
-          alt=""
-        />
-        <div class="sidebar-post">
-          <p>Phần mềm</p>
-          <a href="#">Ông chủ ChatGPT chỉ ra vấn đề của Thung lũng Silicon</a>
+
+      <div
+        style="display: flex; align-items: start; gap: 30px; margin-top: 80px"
+      >
+        <div class="editors-pick-section">
+          <div class="section-header">
+            <h2>Lựa Chọn Của Biên Tập Viên</h2>
+            <a href="#">Xem thêm <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="section-grid">
+            <div class="section-card">
+              <img
+                src="https://i1-sohoa.vnecdn.net/2023/09/08/sam-altman-responds-to-elon-mu-1522-9294-1694190759.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=o_T54ddAZXAMYiC1hMVtsQ"
+                alt=""
+              />
+              <a href="#">Elon Musk vào top 100 người có ảnh hưởng về AI</a>
+            </div>
+            <div class="section-card">
+              <img
+                src="https://i1-sohoa.vnecdn.net/2023/09/07/Image-822926275-ExtractWord-0-8363-5754-1694079665.png?w=240&h=144&q=100&dpr=1&fit=crop&s=-L74eCq7vRg40Ep9PvZDDg"
+                alt=""
+              />
+              <a href="#">Laptop hỗ trợ nhiều tiện tích cho sinh viên</a>
+            </div>
+            <div class="section-card">
+              <img
+                src="https://i1-sohoa.vnecdn.net/2023/09/08/IMG3333-1694141342-3344-1694141351.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=sLGGxT30eOBF7u_QtnKcIQ"
+                alt=""
+              />
+              <a href="#"
+                >Facebook lỗi chỉ đăng nhập được một tài khoản trên mỗi thiết
+                bị</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="sidebar-post">
-          <p>Công nghệ</p>
-          <a href="#">Chân dung iPhone 15 trước ngày ra mắt</a>
-        </div>
-        <div class="sidebar-post">
-          <p>Trò chơi</p>
-          <a href="#">Game bắt Pokemon khi ngủ gây chú ý</a>
-        </div>
-        <div class="sidebar-post">
-          <p>Tiện ích</p>
-          <a href="#">GoPro ra camera hành trình giá 12,5 triệu đồng</a>
+
+        <div class="newsletter">
+          <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+          <h4>Subscribe to Our Newsletter</h4>
+          <p>Stay updated to our latest news.</p>
+          <input type="text" placeholder="Email address" />
+          <button type="button">Subscribe</button>
         </div>
       </div>
-    </div>
-    <script src="./script.js"></script>
+
+      <script src="./script.js"></script>
+    </main>
   </body>
 </html>
