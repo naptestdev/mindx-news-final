@@ -1,0 +1,74 @@
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+
+.hero {
+  position: relative;
+  flex: 1;
+  height: min(575px, 40vw);
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-content {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  right: 40px;
+  color: #dfdee3;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.hero-chips {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-chips .chip span {
+  font-size: small;
+}
+
+.sidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 25px;
+}
+
+.sidebar img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar .sidebar-post p {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: smaller;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.sidebar .sidebar-post a {
+  font-weight: 600;
+}

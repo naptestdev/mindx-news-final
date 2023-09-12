@@ -1,0 +1,30 @@
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 25px;
+  width: auto;
+}
+
+.navbar-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-side a {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-side a:hover {
+  color: var(--primary);
+}
