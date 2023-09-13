@@ -170,3 +170,41 @@
 .stay-connected p {
   color: var(--gray);
 }
+
+.must-read-section {
+  margin-top: 50px;
+}
+
+.must-read-section .section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.must-read-section .section-card {
+  position: relative;
+  height: min(430px, 35vw);
+  overflow: hidden;
+}
+
+.must-read-section .section-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.must-read-section .section-card .section-content {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  color: #dfdee3;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
