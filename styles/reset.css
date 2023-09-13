@@ -1,6 +1,6 @@
 :root {
   --primary: #805aed;
-  --gray: var(--gray);
+  --gray: #4c455f;
 }
 
 * {

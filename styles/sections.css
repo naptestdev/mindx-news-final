@@ -208,3 +208,38 @@
   align-items: start;
   gap: 10px;
 }
+
+.apps-section {
+  margin-top: 50px;
+}
+
+.apps-section .section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.apps-section .section-card img {
+  width: 100%;
+}
+
+.apps-section .section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.apps-section .section-card span {
+  font-size: small;
+  color: var(--gray);
+}
+
+.apps-section .section-card h3 {
+  margin-top: 8px;
+}
+
+.apps-section .section-card p {
+  font-size: smaller;
+  color: var(--gray);
+}
