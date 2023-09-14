@@ -25,3 +25,18 @@ nav img {
 .navbar-side a:hover {
   color: var(--primary);
 }
+
+@media screen and (max-width: 896px) {
+  .navbar-side:nth-child(2) {
+    display: none;
+  }
+
+  nav .navigation-links {
+    display: none;
+  }
+
+  nav {
+    padding: 0 20px;
+    height: 80px;
+  }
+}

@@ -26,3 +26,15 @@ footer a {
   display: block;
   color: var(--gray);
 }
+
+@media screen and (max-width: 896px) {
+  footer {
+    padding: 30px 0;
+  }
+
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

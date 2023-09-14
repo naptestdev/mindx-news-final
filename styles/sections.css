@@ -42,6 +42,10 @@
   color: var(--primary);
 }
 
+.editors-pick-section .section-card img {
+  width: 100%;
+}
+
 .newsletter {
   width: 300px;
   border: 1px solid #dfdee3;
@@ -135,14 +139,23 @@
   margin-bottom: 15px;
 }
 
+.tech-section .section-card a {
+  transition: 0.3s;
+}
+
+.tech-section .section-card a:hover {
+  color: var(--primary);
+}
+
 .chips {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.chips .chip span {
+.chips .chip {
   font-size: small;
+  color: var(--gray);
 }
 
 .stay-connected {
@@ -242,4 +255,64 @@
 .apps-section .section-card p {
   font-size: smaller;
   color: var(--gray);
+}
+
+.apps-section .section-card a {
+  transition: 0.3s;
+}
+
+.apps-section .section-card a:hover {
+  color: var(--primary);
+}
+
+.section-container {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-layout-shift {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editors-pick-section .section-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .tech-section .section-card {
+    flex-direction: column;
+  }
+
+  .tech-section img {
+    width: 100%;
+  }
+
+  .stay-connected {
+    position: static;
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  .must-read-section .section-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .must-read-section .section-card {
+    height: max(300px, 35vw);
+  }
+
+  .apps-section .section-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }

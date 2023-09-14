@@ -1,5 +1,5 @@
 :root {
-  --primary: #805aed;
+  --primary: #c00000;
   --gray: #4c455f;
 }
 
@@ -13,11 +13,16 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   background: radial-gradient(
-      circle 40vw at 0px -10vw,
-      #acebd5 0,
+      circle 30vw at 0px -10vw,
+      #b0e4ec 0,
       #ffffff00 100%
     ),
-    radial-gradient(circle 40vw at 100vw -10vw, #ddceee 0, #ffffff00 100%);
+    radial-gradient(circle 30vw at 100vw -10vw, #edaeae 0, #ffffff00 100%);
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
 }
 
 a {
@@ -29,4 +34,21 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+i {
+  color: inherit;
+}
+
+.ellipsis-2-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 896px) {
+  main {
+    padding: 0;
+  }
 }

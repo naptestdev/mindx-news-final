@@ -74,3 +74,39 @@
 .sidebar .sidebar-post a:hover {
   color: var(--primary);
 }
+
+@media screen and (max-width: 896px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero {
+    flex: auto;
+    width: 100%;
+    height: max(350px, 40vw);
+  }
+
+  .sidebar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sidebar img {
+    grid-row: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    padding: 0px 30px;
+  }
+
+  .hero-content {
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
