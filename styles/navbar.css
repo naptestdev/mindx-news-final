@@ -26,6 +26,56 @@ nav img {
   color: var(--primary);
 }
 
+.search-box {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+}
+
+.search-box input {
+  height: 50px;
+  width: 200px;
+  border: 1px dotted white;
+  background: white;
+  padding: 0 10px;
+  outline: none;
+  font-size: large;
+}
+
+.search-box input:focus {
+  border: 1px dotted #808080;
+}
+
+#search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.search-box-visible {
+  opacity: 100%;
+  visibility: visible;
+  width: 200px;
+}
+
+.navbar-side-right {
+  position: relative;
+}
+
 @media screen and (max-width: 896px) {
   .navbar-side:nth-child(2) {
     display: none;
