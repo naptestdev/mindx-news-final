@@ -47,6 +47,35 @@ i {
   overflow: hidden;
 }
 
+.back-to-top {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: var(--primary);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.back-to-top:hover {
+  background: black;
+}
+
+.back-to-top-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media screen and (max-width: 896px) {
   main {
     padding: 0;

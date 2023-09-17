@@ -1,7 +1,8 @@
 nav {
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
 }
 
 nav img {
@@ -42,7 +43,7 @@ nav img {
 
 .search-box input {
   height: 50px;
-  width: 200px;
+  width: 180px;
   border: 1px dotted white;
   background: white;
   padding: 0 10px;
@@ -69,24 +70,124 @@ nav img {
 .search-box-visible {
   opacity: 100%;
   visibility: visible;
-  width: 200px;
+  width: 180px;
 }
 
 .navbar-side-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-icons {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 896px) {
+  nav .drop {
+    position: relative;
+  }
+
+  nav .drop:hover > a {
+    color: var(--primary);
+  }
+
+  nav .list {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    top: 100%;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-top: 2px solid var(--primary);
+    box-shadow: 3px 3px 6px #808080;
+    z-index: 10;
+    transition: 0.2s;
+  }
+
+  nav .drop:hover .list {
+    opacity: 100;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  nav .list-child {
+    white-space: nowrap;
+    background: #fff;
+    padding: 10px 50px 10px 10px;
+  }
+
+  nav .list-child:hover {
+    background: #f8f8f8;
+  }
+
+  nav .drop {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+}
+
+.drops {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-side-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-side-left button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
 }
 
 @media screen and (max-width: 896px) {
-  .navbar-side:nth-child(2) {
-    display: none;
+  .navbar-side-left button {
+    display: block;
   }
 
-  nav .navigation-links {
+  .navbar-side-left {
+    width: 100%;
+    height: 80px;
+  }
+
+  .navbar-side-right {
     display: none;
   }
 
   nav {
     padding: 0 20px;
-    height: 80px;
+    flex-direction: column;
+    gap: 0;
+    height: auto;
   }
+
+  .navbar-side-right {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .drops {
+    flex-direction: column;
+  }
+
+  nav .list {
+    display: none;
+  }
+}
+
+.navbar-side-right-visible {
+  display: flex;
 }

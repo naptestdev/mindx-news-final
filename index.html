@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/sections.css" />
@@ -28,34 +28,90 @@
   <body>
     <main>
       <nav>
-        <div class="navbar-side">
+        <div class="navbar-side navbar-side-left">
           <a href="./index.html">
             <img src="./assets/logo.png" alt="" />
           </a>
-          <a class="navigation-links" href="#">Công nghệ</a>
-          <a class="navigation-links" href="#">Tiện ích</a>
-          <a class="navigation-links" href="#">Phần mềm</a>
-          <a class="navigation-links" href="#">Trò chơi</a>
-          <a class="navigation-links" href="#">Podcast</a>
+          <button id="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
         <div class="navbar-side navbar-side-right">
-          <a
-            style="
-              color: var(--primary);
-              text-transform: none;
-              font-size: medium;
-            "
-            href="#"
-            >Subscribe</a
-          >
-          <a style="text-transform: none; font-size: medium" href="#"
-            >Sign in</a
-          >
-          <button id="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <div class="search-box">
-            <input type="text" placeholder="Search..." />
+          <div class="drops">
+            <div class="drop">
+              <a href="#">Công nghệ</a>
+              <div class="list">
+                <a class="list-child" href="#">Sản phẩm</a>
+                <a class="list-child" href="#">Blockchain</a>
+                <a class="list-child" href="#">Kinh nghiệm</a>
+                <a class="list-child" href="#">AI</a>
+                <a class="list-child" href="#">Bảo mật</a>
+              </div>
+            </div>
+            <div class="drop">
+              <a href="#">Tiện ích</a>
+              <div class="list">
+                <a class="list-child" href="#">Tốc độ mạng</a>
+                <a class="list-child" href="#">Tốc độ đánh máy</a>
+                <a class="list-child" href="#">Luyện gõ 10 ngón</a>
+                <a class="list-child" href="#">Photoshop</a>
+                <a class="list-child" href="#">Chuyển đổi văn bản</a>
+              </div>
+            </div>
+            <div class="drop">
+              <a href="#">Phần mềm</a>
+              <div class="list">
+                <a class="list-child" href="#">Chat</a>
+                <a class="list-child" href="#">Mạng xã hội</a>
+                <a class="list-child" href="#">Email</a>
+                <a class="list-child" href="#">Trình duyệt web</a>
+                <a class="list-child" href="#">Bộ gõ tiếng Việt</a>
+                <a class="list-child" href="#">Nén file</a>
+                <a class="list-child" href="#">Hỗ trợ Download</a>
+              </div>
+            </div>
+            <div class="drop">
+              <a href="#">Trò chơi</a>
+              <div class="list">
+                <a class="list-child" href="#">Iphone</a>
+                <a class="list-child" href="#">Android</a>
+                <a class="list-child" href="#">Desktop</a>
+                <a class="list-child" href="#">Web</a>
+                <a class="list-child" href="#">Unity</a>
+                <a class="list-child" href="#">PlayStation</a>
+              </div>
+            </div>
+            <div class="drop">
+              <a href="#">Giáo dục</a>
+              <div class="list">
+                <a class="list-child" href="#">Tin tức</a>
+                <a class="list-child" href="#">Tuyển sinh</a>
+                <a class="list-child" href="#">Du học</a>
+                <a class="list-child" href="#">Học tiếng Anh</a>
+                <a class="list-child" href="#">Trắc nghiệm</a>
+                <a class="list-child" href="#">Giáo dục 4.0</a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-icons">
+            <a
+              style="
+                color: var(--primary);
+                text-transform: none;
+                font-size: medium;
+              "
+              href="#"
+              >Subscribe</a
+            >
+            <a style="text-transform: none; font-size: medium" href="#"
+              >Sign in</a
+            >
+            <button id="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="search-box">
+              <input type="text" placeholder="Search..." />
+            </div>
           </div>
         </div>
       </nav>
@@ -464,6 +520,10 @@
         </div>
       </div>
     </footer>
+
+    <button class="back-to-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
 
     <script src="./scripts/main.js"></script>
   </body>
